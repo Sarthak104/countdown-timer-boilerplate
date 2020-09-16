@@ -3,8 +3,13 @@ import React from 'react';
 class CountdownForm extends React.Component {
      onSubmit(e) {
        //This will give you string for seconds. Do not remove refs
+       e.preventDefault();
+
         var secondsStr = this.refs.seconds.value;
-       
+        var timeadd=parseInt(secondsStr);
+        if(timeadd>0 && secondsStr!==""){
+            this.props.onSetCountdownTime(timeadd);
+        }
     }
 
     
