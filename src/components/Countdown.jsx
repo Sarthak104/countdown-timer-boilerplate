@@ -6,14 +6,15 @@ class Countdown extends React.Component {
   
 
     render() {
-
+        //var count= {this.state}
         return (
             <div>
-                <Clock timeInSeconds={count}/>
-                <CountdownForm onSetCountdownTime={}/>
+                <Clock />
+                <CountdownForm />
             </div>
         );
     }
 }
-
+// timeInSeconds={count}
+// onSetCountdownTime={}
 export default Countdown;
