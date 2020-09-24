@@ -38,7 +38,7 @@ class Clock extends React.Component {
         setTimeout(() => {
             clearInterval(this.clock);
             this.props.resetCount();
-        }, (timeInSeconds+1)*1000);
+        }, (timeInSeconds+1) * 1000);
     };
 
     componentDidMount() {
